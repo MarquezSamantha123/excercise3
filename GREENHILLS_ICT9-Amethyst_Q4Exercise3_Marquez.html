@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Centimeters to Feet Converter</title>
+</head>
+<body>
+	<input type="text" id="id1" placeholder="Enter Number"><br>
+	<input type="text" id="id2" placeholder="Enter Number"><br>
+	<input type="submit" value="Convert" onclick="myFunction()"><br>
+	<p id="answer"></p>
+	<script>
+		function myFuntion() {
+			var num1 = document.getElementById('id1').value;
+			var num2 = document.getElementById('id2').value;
+			var answer = Number(num1) * Number(num2);
+			document.getElementById('answer').innerHTML = answer + "ft";
+		}
+	</script>
+</body>
+</html>
